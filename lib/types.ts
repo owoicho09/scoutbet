@@ -22,6 +22,11 @@ export interface Match {
   confidence: number
   formHome: number[]
   formAway: number[]
+  predictedWinner: 'home' | 'draw' | 'away'
+  btts: 'high' | 'medium' | 'low'
+  over25: 'high' | 'medium' | 'low'
+  insight: string
+  recommendedBet: string
   odds: {
     home: number
     draw: number
